@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- デバイスサイズ1025px以下 -->
+  <link rel="stylesheet" type="text/css" media="only screen and (max-device-width:1025px)" href="sp_style.css" />
+  <!-- デバイスサイズ1025px以上 -->
+  <link rel="stylesheet" type="text/css" media="screen and (min-device-width:1025px)" href="pc_style.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-3.0.1.min.js"></script>
+  <script type="text/javascript" src="./slick/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" media="screen" />
+  <title>飯塚製麺所R</title>
+</head>
+
+<body>
+  <header>
+    <p class="logo">
+      飯塚製麺所R <a href="http://kit-festival.jp/"><span>in 工大祭</span></a>
+    </p>
+    <nav class="navbar">
+      <img src="img/dropdown.png" alt="">
+      <ul>
+        <li><a href="#pickies">こだわり</a></li>
+        <li><a href="#menu">メニュー</a></li>
+        <li><a href="#members">メンバー</a></li>
+        <li><a href="#store">店舗情報</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="top">
+    <div class="overlay"></div>
+    <div class="message">
+      <h1>ほんとうに美味しいまぜそばを<br>
+        あなたに。
+      </h1>
+    </div>
+  </div>
+
+  <div class="contents about" id="about">
+    <h2 class="topics">飯塚製麺所Rとは</h2>
+    <div class="text">
+      <p>
+        飯塚製麺所Rとは、まぜそばと飯塚が大好きな九工大生24人が集まり、まぜそばで飯塚を盛り上げることを目的とした工大祭の模擬店です。<br>
+        去年の工大祭で初めて飯塚製麺所として参加し、今年も帰ってきたということで、ReturnのRをとって飯塚製麺所Rとしました。
+
+      </p>
+    </div>
+  </div>
+
+  <div class="contents pickies" id="pickies">
+    <h2 class="topics">こだわり</h2>
+    <div class="picky">
+      <div class="picky_img">
+        <img src="img/men.jpg">
+
+      </div>
+      <div class="text-contents">
+        <p class="title">こだわりの麺</p>
+        <hr>
+        <p>
+          こだわりの麺こだわりの麺こだわりの麺こだわりの麺こだわりの麺<br>
+          こだわりの麺こだわりの麺こだわりの麺こだわりの麺こだわりの麺<br>
+          こだわりの麺こだわりの麺こだわりの麺こだわりの麺こだわりの麺<br>
+        </p>
+      </div>
+    </div>
+    <div class="picky">
+      <div class="text-contents">
+        <p class="title">こだわりのタレ</p>
+        <hr>
+        <p>
+          こだわりのタこだわりのタレこだわりのタレこだわりのタレレ<br>
+          こだわりのタこだわりのタレこだわりのタレこだわりのタレレ<br>
+          こだわりのタこだわりのタレこだわりのタレこだわりのタレレ<br>
+        </p>
+      </div>
+      <div class="picky_img">
+        <img src="img/tare.jpg">
+
+      </div>
+    </div>
+    <div class="picky">
+      <div class="picky_img">
+        <img src="img/nikumiso.jpg">
+      </div>
+      <div class="text-contents">
+        <p class="title">こだわりの肉味噌</p>
+        <hr>
+        <p>
+          こだわりの肉味噌こだわりの肉味噌こだわりの肉味噌こだわりの肉味噌<br>
+          こだわりの肉味噌こだわりの肉味噌こだわりの肉味噌こだわりの肉味噌<br>
+          こだわりの肉味噌こだわりの肉味噌こだわりの肉味噌こだわりの肉味噌<br>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="contents menu" id="menu">
+    <h2 class="topics">メニュー</h2>
+    <div class="slick-box">
+      <div>
+        <img src="img/menu03.jpg">
+        <p class="name">台湾風まぜそば</p>
+        <p class="price">350円</p>
+      </div>
+      <div>
+        <img src="img/menu01.jpg">
+        <p class="name">ネギ盛まぜそば</p>
+        <p class="price">400円</p>
+      </div>
+      <div>
+        <img src="img/menu02.jpg">
+        <p class="name">カルボナーラ風まぜそば</p>
+        <p class="price">400円</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="contents members" id="members">
+    <h2 class="topics">メンバー</h2>
+    <div class="member">
+      <img src="img/honshu.jpg">
+      <h3 class="job">副店長</h3>
+      <h3 class="name">本田 修吾</h3>
+      <p>生命情報　４年</p>
+      <p>メガネ</p>
+    </div>
+    <div class="member">
+      <img src="img/ryoya.jpg">
+      <h3 class="job">店長</h3>
+      <h3 class="name">田中 凌也</h3>
+      <p>生命情報　４年</p>
+      <p>イケメン</p>
+    </div>
+    <div class="member">
+      <img src="img/kogami.jpg">
+      <h3 class="job">副店長</h3>
+      <h3 class="name">小神 寛晴</h3>
+      <p>生命情報　４年</p>
+      <p>イキリ</p>
+    </div>
+  </div>
+
+  <div class="contents store" id="store">
+    <h2 class="topics">店舗情報</h2>
+    <div class="info-text">
+      <p class="address">〒820-8502 福岡県飯塚市川津６８０−４</p>
+      <p class="detail">九州工業大学運動場ステージ付近</p>
+      <p class="time">新飯塚駅より徒歩40分</p>
+    </div>
+    <div class="info-img">
+      <img src="img/store.png" alt="">
+    </div>
+  </div>
+
+  <div class="pagetop">
+    <img src="img/pagetop.png">
+  </div>
+
+  <footer>
+    &copy; 2018 飯塚製麺所R
+  </footer>
+
+  <script type="text/javascript">
+    $(function () {
+      $('img').click(function () {
+        if ($(this).attr('class') == 'selected') {
+          // メニュー非表示
+          $(this).removeClass('selected').next('ul').slideUp('fast');
+        } else {
+          // 表示しているメニューを閉じる
+          $('img').removeClass('selected');
+          $('ul').hide();
+
+          // メニュー表示
+          $(this).addClass('selected').next('ul').slideDown('fast');
+        }
+      });
+
+      // マウスカーソルがメニュー上/メニュー外
+      $('img,ul').hover(function () {
+        over_flg = true;
+      }, function () {
+        over_flg = false;
+      });
+
+      // メニュー領域外をクリックしたらメニューを閉じる
+      $('body').click(function () {
+        if (over_flg == false) {
+          $('img').removeClass('selected');
+          $('ul').slideUp('fast');
+        }
+      });
+
+      // メニュー写真の横スクロール
+      $('.slick-box').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
+
+      // ページ内リンクを押した時のスクロール
+      $('a[href^=#]').click(function () {
+        var speed = 500;
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({
+          scrollTop: position
+        }, speed, "swing");
+        return false;
+      });
+
+      // ページトップに戻るスクロール
+      $('.pagetop').click(function () {
+        $("html,body").animate({
+          scrollTop: 0
+        }, "300");
+      });
+      // ページトップからスクロールしたときにページトップボタンを表示する
+      $('.pagetop').hide();
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 0) {
+          $('.pagetop').slideDown(600);
+        } else {
+          $('.pagetop').slideUp(600);
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
