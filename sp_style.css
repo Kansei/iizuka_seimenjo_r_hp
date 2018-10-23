@@ -6,12 +6,12 @@
 body{
    font-family: "游明朝体", "Yu Mincho", YuMincho, serif;
  }
-  
+
 a{
    color: black;
    text-decoration: none;
  }
-  
+
 a:hover{
   color: #cccccc;
 }
@@ -19,31 +19,37 @@ a:hover{
 ul{
   list-style: none;
 }
-  
+
   /* header */
   header {
+    position: relative;
+    margin:10px 10px;
     height: 150px;
-    width: 100%;
+    width: 365px;
   }
   .logo {
-      display: inline-block;
-      font-size: 70px
+    display: inline-block;
+    font-size: 33px;
+    position: fixed;
+    z-index: 10;
   }
   .logo span {
-    font-size: 40px
+    font-size: 18px
   }
 
   .navbar{
     display: inline-block;
-    /* position: relative; */
-    text-align: right;
+    position: fixed;
+    left: 300px;
+    z-index: 10;
+    width:70px;
   }
 
   .navbar img{
     cursor: pointer;
   }
   .navbar ul{
-    background: white;
+    background: silver;
     display: none;
     position: absolute;
     z-index: 4;
@@ -55,29 +61,31 @@ ul{
       margin-right: 35px;
       font-size: 25px;
   } */
-  
+
   /* トップ画面 */
   .top {
     background-image: url(img/sample.jpg);
     background-size: cover;
-    height: 600px;
-    width: 100%;
+    height: 300px;
+    width: 360px;
     padding: 0;
-    margin: 0;
+    margin: 10px;
     position: relative;
+    border-radius: 30px;
   }
   .top .overlay {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 360px;
+    height: 300px;
     background-color: rgba(10, 6, 5, 0.7);
     z-index: 2;
+    border-radius: 30px;
   }
   .top .message {
     color: white;
     position: absolute;
     z-index: 3;
-    width: 750px;
+    width: 320px;
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
@@ -86,33 +94,35 @@ ul{
   .message h1 {
       font-size: 50px;
   }
-  
+
   /* 各項目の見出し */
   .topics{
     text-align: center;
-    font-size: 48px;
+    margin: 0 10px;
+    font-size: 42px;
     font-weight: 400;
   }
-  
+
   .contents {
     margin-top: 100px;
   }
-  
+
   /* 飯塚製麺所Rとは */
   .about .text {
+    text-align: center;
     font-size: 22px;
-    margin: 0 auto;
-    width: 800px;
+    margin: 0 10px;
+    width: 365px;
   }
-  
-  
+
+
   /* こだわり */
   .pickies{
     /* margin-top: 60px;
     padding-top: 10px; */
     color: black;
   }
-  
+
   .picky{
     background-color: white;
     text-align: center;
@@ -132,23 +142,25 @@ ul{
     margin-top: 40px;
   }
   .picky img{
-    height: 400px;
-    width: 600px;
+    height: 300px;
+    width: 365px;
+    border-radius: 30px;
   }
   .picky .text-contents{
-    width: 400px;
+    width: 365px;
     text-align: left;
-    margin: 30px;
+    margin: 10px;
   }
-  
+
   /* メニュー */
   .menu {
     text-align: center;
   }
   .menu img {
-    margin: auto;
-    height: 500px;
-    width: 700px;
+    margin: 10px;
+    height: 300px;
+    width: 365px;
+    border-radius: 30px;
   }
   .menu .name {
     font-size: 30px;
@@ -158,7 +170,7 @@ ul{
     font-size: 25px;
     margin-top: 10px;
   }
-  
+
   /* メンバー紹介 */
   .members{
     /* margin-top: 120px; */
@@ -169,8 +181,8 @@ ul{
   }
   .member{
     text-align: center;
-    margin: 30px;
-    width: 400px;
+    margin: 10px;
+    width: 365px;
   }
   .member .job{
     font-size: 30px;
@@ -189,22 +201,22 @@ ul{
   .member p{
     margin-top:5px;
   }
-  
+
   /* 店舗情報 */
   .store{
     text-align: center;
   }
   .store img{
     margin-top: 10px;
-    height: 400px;
-    width: 600px;
+    height: 250px;
+    width: 365px;
   }
   .store p{
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 5px;
     margin-top: 0;
   }
-  
+
   /* ページトップボタン */
   .pagetop{
       position:fixed;
@@ -217,13 +229,12 @@ ul{
     width: 80px;
     height: 75px;
   }
-  
+
   footer{
     margin-top: 80px;
     font-size: 20px;
-    background-color: white;
+    background-color: silver;
     color: black;
     text-align: center;
     padding: 10px;
   }
-  
