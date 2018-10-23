@@ -15,6 +15,7 @@ a:hover{
 /* header */
 header {
   text-align: right;
+  height: 110px;
 }
 .logo {
     position: absolute;
@@ -31,6 +32,10 @@ header {
     margin-top: 12px;
     margin-right: 35px;
     font-size: 25px;
+}
+
+.navbar .sp-design{
+  display: none;
 }
 
 /* トップ画面 */
@@ -134,6 +139,10 @@ header {
 .menu .price {
   font-size: 25px;
   margin-top: 10px;
+}
+
+.menu2{
+  display: none;
 }
 
 /* メンバー紹介 */

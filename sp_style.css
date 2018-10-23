@@ -23,9 +23,14 @@ ul{
   /* header */
   header {
     position: relative;
-    margin:10px 10px;
-    height: 150px;
+    padding-top: 10px;
+    padding-left: 10px;
+    /*margin:4px 10px;*/
+    height: 60px;
     width: 365px;
+    position: fixed;
+    z-index: 9;
+    background-color: white;
   }
   .logo {
     display: inline-block;
@@ -42,18 +47,40 @@ ul{
     position: fixed;
     left: 300px;
     z-index: 10;
-    width:70px;
+    width:100px;
   }
 
   .navbar img{
     cursor: pointer;
   }
   .navbar ul{
-    background: silver;
+    background: #EEEEEE;
+    border-radius: 10px;
     display: none;
     position: absolute;
     z-index: 4;
   }
+  .navber ul li:hover{
+  　background-color: silver;
+  }
+  .navbar .pc-design{
+    display: none;
+  }
+  /*.navber li a{
+    display: block;
+    border-left: 8px solid #474655;
+    border-top: 1px solid #474655;
+    border-right: 1px solid #474655;
+    border-bottom: 1px solid #474655;
+    background-color: #fff;
+    padding: 3px 10px;
+    text-decoration: none;
+    color: #333;
+    width: 150px;
+    margin: 1px 0px;
+    text-align: left;
+    font-size: 14px;
+  }*/
 
   /* .navbar ul li {
       display: inline-block;
@@ -69,9 +96,11 @@ ul{
     height: 300px;
     width: 360px;
     padding: 0;
+    top: 50px;
     margin: 10px;
     position: relative;
-    border-radius: 30px;
+    text-align: center;
+
   }
   .top .overlay {
     position: absolute;
@@ -79,7 +108,7 @@ ul{
     height: 300px;
     background-color: rgba(10, 6, 5, 0.7);
     z-index: 2;
-    border-radius: 30px;
+
   }
   .top .message {
     color: white;
@@ -92,15 +121,19 @@ ul{
     -webkit- transform: translateY(-50%) translateX(-50%);
   }
   .message h1 {
-      font-size: 50px;
+      font-size: 22px;
   }
 
   /* 各項目の見出し */
   .topics{
     text-align: center;
     margin: 0 10px;
-    font-size: 42px;
+    font-size: 38px;
     font-weight: 400;
+  }
+
+  .under {
+  background: linear-gradient(transparent 70%, #ff99ab 70%);
   }
 
   .contents {
@@ -109,7 +142,7 @@ ul{
 
   /* 飯塚製麺所Rとは */
   .about .text {
-    text-align: center;
+    padding-top: 10px;
     font-size: 22px;
     margin: 0 10px;
     width: 365px;
@@ -126,49 +159,57 @@ ul{
   .picky{
     background-color: white;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
+    margin:10px; padding:10px; border:5px solid white;
+    width: 325px;
   }
   .picky div{
     display: inline-block;
     vertical-align: top;
   }
   .picky .title{
-    font-size: 30px;
+    font-size: 17px;
     font-weight: 200;
     margin-bottom: 10px;
   }
   .picky p{
-    font-size: 22px;
-    margin-top: 40px;
+    font-size: 13px;
   }
   .picky img{
-    height: 300px;
-    width: 365px;
-    border-radius: 30px;
+    height: 90px;
+    width: 100px;
+    margin-top: 30px;
+    margin-left: 5px;
+    border-radius: 10px;
   }
   .picky .text-contents{
-    width: 365px;
+    width: 140px;
     text-align: left;
-    margin: 10px;
+    margin: 5px;
   }
 
   /* メニュー */
   .menu {
     text-align: center;
+    display: none;
   }
-  .menu img {
-    margin: 10px;
-    height: 300px;
-    width: 365px;
-    border-radius: 30px;
+  .menu2 .menu-list{
+    margin:10px; padding:10px; border:5px solid silver;
+    width: 325px;
   }
-  .menu .name {
-    font-size: 30px;
+
+  .menu2 .name {
+    font-size: 28px;
     margin-bottom: 0;
+    text-align: center;
   }
-  .menu .price {
+  .menu2 .price {
     font-size: 25px;
     margin-top: 10px;
+    text-align: right;
+  }
+  .menu2 .under2{
+    border-bottom: solid 2px red;
   }
 
   /* メンバー紹介 */
@@ -183,6 +224,8 @@ ul{
     text-align: center;
     margin: 10px;
     width: 365px;
+    margin:10px; padding:10px; border:5px solid black;
+    width: 325px;
   }
   .member .job{
     font-size: 30px;
@@ -190,16 +233,20 @@ ul{
     margin: 5px;
   }
   .member .name{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: lighter;
     margin: 2px;
   }
   .member img{
     border-radius: 50%;
-    width: 300px;
+    width: 150px;
+    text-align: left;
   }
   .member p{
     margin-top:5px;
+  }
+  .member h3{
+    width: 150px;
   }
 
   /* 店舗情報 */
@@ -209,12 +256,12 @@ ul{
   .store img{
     margin-top: 10px;
     height: 250px;
-    width: 365px;
+    width: 355px;
   }
   .store p{
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 5px;
-    margin-top: 0;
+    margin-top: 10px;
   }
 
   /* ページトップボタン */
@@ -233,7 +280,7 @@ ul{
   footer{
     margin-top: 80px;
     font-size: 20px;
-    background-color: silver;
+    background-color: white;
     color: black;
     text-align: center;
     padding: 10px;
