@@ -27,6 +27,9 @@ header {
 .logo span {
   font-size: 20px
 }
+.navbar{
+  top: 70px;
+}
 .navbar ul li {
     display: inline-block;
     margin-top: 12px;
@@ -35,7 +38,10 @@ header {
 }
 
 .navbar .sp-design{
-  display: none;
+  /*display: none;*/
+}
+.navbar img{
+  visibility: hidden;
 }
 
 /* トップ画面 */
