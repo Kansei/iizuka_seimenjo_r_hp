@@ -272,7 +272,7 @@ body{
     text-align: left;
   }
   .member .name{
-    font-size: 33px;
+    font-size: 30px;
     font-weight: lighter;
     margin: 2px;
     text-align: left;
@@ -280,6 +280,7 @@ body{
   .member img{
     border-radius: 50%;
     width: 135px;
+    height: 135px;
     text-align: left;
     margin-right: 10px;
   }
