@@ -139,9 +139,7 @@ body{
     font-size: 21px;
     margin-left: 15px;
     width: 345px;
-    background-color: white;
     padding-left: 5px;
-    box-shadow: 0 0 16px gray;
   }
 
 
@@ -174,8 +172,8 @@ body{
     font-size: 13px;
   }
   .picky img{
-    height: 110px;
-    width: 120px;
+    height: 136px;
+    width: 165px;
     margin-top: 20px;
     margin-left: 0;
     margin-right: 10px;
